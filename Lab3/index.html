@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lab 3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://http://raventu2.heyuhnem.com/LABS/Lab3/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="http://raventu2.heyuhnem.com/LABS/Lab3/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://raventu2.heyuhnem.com/LABS/Lab3/css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav"></nav>
+    <div class="container-fluid p-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+            <div class="w-100">
+                <h1 class="mb-0">
+                    Contact
+                    <span class="text-primary">Form</span>
+                </h1>
+                <p class="lead mb-5">The purpose of this contact form is to create a contact form using the POST method.</p>
+                <form action="process.php" method="POST">
+
+                    <fieldset>
+                        <p>
+                            <label>Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="text" autofocus name="Name" placeholder="Full name... " autocomplete="off" />
+                        </p>
+                        <p>
+                            <label>Email:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="email" name="Email" autocomplete="off" required />
+                        </p>
+                        <p>
+                            <label>Phone:&nbsp;&nbsp;</label>
+                            <input type="tel" name="Phone" required />
+                        </p>
+                        <p>
+                            <label>Date: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="date" name="Date" required />
+                        </p>
+                        <p>
+                            <label>Time: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="time" name="Time" required />
+                        </p>
+                        <p>
+                            <label>Message:</label>
+                            <br />
+                            <textarea id="Message" name="Message" placeholder="Please write a message here..."></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Send" />&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear" />
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="http://raventu2.heyuhnem.com/LABS/Lab3/vendor/jquery/jquery.min.js"></script>
+    <script src="http://raventu2.heyuhnem.com/LABS/Lab3/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://raventu2.heyuhnem.com/LABS/Lab3/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="http://raventu2.heyuhnem.com/LABS/Lab3/js/resume.min.js"></script>
+
+</body>
+
+</html>
+
+<?php
+                    foreach($_POST as $key=>$value){
+
+                    echo '<strong>'.$key.' : </strong>'.$value.'<br />';
+                    $msg .= '<strong>'.$key.' : </strong>'.$value.'<br />';
+                    }
+                    $to = 'raventura@uh.edu';
+                    $from = $_POST['Email'];
+                    $bcc = $from;
+                    $subject = 'Contact Form';
+                    $msg = NULL;
+                    $msg .= 'Name: '.$_POST['Name'].'<br>';
+                    $msg .= 'Email: '.$_POST['Email'].'<br>';
+                    $msg .= 'Phone: '.$_POST['Phone'].'<br>';
+                    $msg .= 'Time '.$_POST['Time'].'<br>';
+                    $msg .= 'Date: '.$_POST['Date'].'<br>';
+                    $msg .= 'Message: '.$_POST['Message'].'<br>';
+                    echo $msg;
+
+
+                    //---------------------------------- email header ----------------------------------//
+                    $headers = "MIME-Version: 1.0" . "\r\n";
+                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                    $headers .= "From: ". $_POST['Email'] . "\r\n";
+                    $headers .= "Bcc: ". $bcc . "\r\n";
+
+
+                    //---------------------------------- checking ----------------------------------//
+                    if(mail('raventura@uh.edu', $_POST['Subject'], $msg, $headers)){
+
+                    echo 'success msg <br>';
+
+                    }else {
+
+                    echo 'error msg <br>';
+
+                    }
+
+                    echo '<br><hr><br>';
+                    echo '<strong>HTTP_REFERER : </strong><a href="' . $_SERVER['HTTP_REFERER'] . '">' . $_SERVER['HTTP_REFERER'] . '</a><br />';
+
+                    ?>
