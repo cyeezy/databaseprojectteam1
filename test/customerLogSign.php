@@ -13,7 +13,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about_us.php">Track Package </a></li>
                 <li><a href="about_us.php">About Us</a></li>
-                <li><a href="contact.php">FAQs</a></li>
+                <li><a href="contact.html">FAQs</a></li>
             </ul>
         </nav>
     </header>

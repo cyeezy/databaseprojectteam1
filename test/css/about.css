@@ -59,7 +59,7 @@ nav ul li
     margin: 0 5px;
 }
 
-nav ul li a 
+nav ul li a
 {
     color: white;
     font-size: 14px;
@@ -68,7 +68,6 @@ nav ul li a
     text-transform: uppercase;
     font-weight: bold;
 }
-
 
  .box .container
 {
@@ -143,7 +142,7 @@ a.active, a:hover {
     font-size: 25px;
 }
 
-body h3 
+body h3
 {
     font-size: 35px;
     color: white;
@@ -343,7 +342,7 @@ h3 {
     transition: all 0.2s ease 0.15s;
 }
 
-.accordion .content p 
+.accordion .content p
 {
         font-size: 1rem;
         font-weight: 300;
@@ -367,9 +366,7 @@ h3 {
     width: 600px;
     height: 400px;
     margin: 100px auto;
-    background: #ff5353;
+    background: #000000;
     position: center;
     border-radius: 5px;
 }
-
-
