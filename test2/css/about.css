@@ -1,0 +1,372 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../img/night.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+nav
+{
+    height: 80px;
+    width: 100%;
+}
+
+label.logo
+{
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 5px;
+}
+
+nav ul li
+{
+    padding-top: 5px;
+    padding-bottom: 1px;
+    bottom: 0;
+    line-height: normal;
+    margin: 0 5px;
+}
+
+nav ul li a
+{
+    color: white;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ .box .container
+{
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    position: center;
+    margin-top: auto;
+    border-radius: 15px;
+}
+
+
+.box .container h1
+{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.box .container p
+{
+    color: white;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+
+a.active, a:hover {
+    background: black;
+    transition: .5s;
+}
+
+.package
+{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+    .package input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    .package input[type=email] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+.package label
+{
+    color: black;
+}
+
+.package h3, h4
+{
+    color: black;
+    font-size: 25px;
+}
+
+body h3
+{
+    font-size: 35px;
+    color: white;
+}
+
+.butt input[type=button] {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: black;
+    width: 50%;
+    border: 0;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 14px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.butt input[type=button]:hover
+{
+    background-color: #4CAF50;
+    color: white;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+legend {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 125px;
+    background-color: rgba(133, 74, 230, .5);
+    margin: 0 auto;
+}
+
+.track
+{
+    width: 250px;
+    height: 100px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    position: center;
+}
+
+    .track h3 {
+        color: black;
+        font-family: 'Times New Roman';
+    }
+
+.track input[type=button]:hover
+{
+       color: white;
+       background: black;
+}
+
+.faq
+{
+    margin-top: 100px;
+    padding: 50px;
+    width: 100%;
+    height: 50px;
+    background-image: url(../img/faq.jpg);
+    border-radius: 5px;
+}
+
+    .faq label {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        position: center;
+        text-align: center;
+        color: white;
+    }
+
+.faqs-page accordian h4
+{
+    font-size: 25px;
+    background-color:rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+
+/*
+@media (max-width: 400px){
+    body{
+        font-size: 9pt;
+    }
+}
+*/
+
+.contain {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #373d51;
+    padding: 1.3rem;
+    margin: 0;
+}
+
+.accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    .accordion a:hover,
+    .accordion a:hover::after {
+        cursor: pointer;
+        color: #4CAF50
+    }
+
+        .accordion a:hover::after {
+            border: 1px solid #4CAF50
+        }
+
+    .accordion a.active {
+        color: #4CAF50
+        border-bottom: 1px solid #4CAF50
+    }
+
+    .accordion a::after {
+        font-family: 'Ionicons';
+        content: '\f218';
+        position: absolute;
+        float: right;
+        right: 1rem;
+        font-size: 1rem;
+        color: #7288a2;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 1px solid #7288a2;
+        text-align: center;
+    }
+
+    .accordion a.active::after {
+        font-family: 'Ionicons';
+        content: '\f209';
+        color: #4CAF50
+        border: 1px solid #4CAF50
+    }
+
+.accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p
+{
+        font-size: 1rem;
+        font-weight: 300;
+}
+
+    .accordion .content.active {
+        opacity: 1;
+        padding: 1rem;
+        max-height: 100%;
+        -webkit-transition: all 0.35s ease 0.15s;
+        -o-transition: all 0.35s ease 0.15s;
+        transition: all 0.35s ease 0.15s;
+    }
+
+.contain h2, .accordion, .accordion a
+{
+    color: white;
+}
+
+.box{
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    background: #000000;
+    position: center;
+    border-radius: 5px;
+}

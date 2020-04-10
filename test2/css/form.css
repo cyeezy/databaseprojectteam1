@@ -1,0 +1,142 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+nav
+{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+label.logo
+{
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 5px;
+}
+
+nav ul li
+{
+    padding-top: 5px;
+    padding-bottom: 1px;
+    bottom: 0;
+    line-height: normal;
+    margin: 0 5px;
+}
+
+nav ul li a
+{
+    color: white;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.signin
+{
+    width: 360px;
+    padding: 50px;
+    margin: auto;
+}
+
+.form
+{
+    position: relative;
+    z-index: 1;
+    background-color: gray;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align:center;
+    border-radius: 25px;
+}
+
+
+.form input
+{
+    font-family: 'Times New Roman', Times, serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type=button] {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: black;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+input[type=button]:hover
+{
+        background-color: #4CAF50; /* Green */
+        color: white;
+}
+
+.form .message
+{
+    margin: 15px 0 0;
+    color: white;
+    font-size: 15px;
+}
+
+.form .message a
+{
+    color: white;
+    text-decoration: none;
+
+}
+
+.form .register
+{
+    display:none;
+}
+
+.form label
+{
+    color:white;
+}
+
+.form legend
+{
+  color: white;
+  font-size: 20px;
+}
