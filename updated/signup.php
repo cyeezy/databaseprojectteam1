@@ -48,7 +48,7 @@
             <input type="text" name="firstname" placeholder="First Name" required>
             <input type="text" name="lastname" placeholder="Last Name" required>
             <input type="text" name="email" placeholder="Email" required>
-            <input type="text" name="phoneNum" placeholder="xxx-xxx-xxxx Phone" REQUIRED>
+            <input type="text" name="phoneNum" placeholder="xxx-xxx-xxxx" REQUIRED>
             <input type="password" name="password" placeholder="Password" required>
             <input type="password" name="password-repeat" placeholder="Repeat Password">
 
