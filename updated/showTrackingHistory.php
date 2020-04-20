@@ -11,6 +11,12 @@ $stmt->execute();
 $result = $stmt->get_result();
 $stmt->close();
 
+$stmt = $conn->prepare("SELECT * FROM trackinghistory WHERE trackingNumber = $trackingNum");
+$stmt->execute();
+$resultHistory = $stmt->get_result();
+$rowHistory = $resultHistory->fetch_assoc();
+$stmt->close();
+
 ?>
 
 
@@ -29,7 +35,7 @@ $stmt->close();
      <label class="logo">UH Post Office</label>
      <ul>
          <li><a href="customerSignedIn.html">Home</a></li>
-         <li><a href="chooseCustomerAction.html">Account</a></li>
+         <li><a href="customerChooseAction.html">Account</a></li>
          <li><a href="index.html">Logout</a></li>
      </ul>
  </nav>
@@ -43,7 +49,15 @@ $stmt->close();
 
     <?php
 
-    if ($result->num_rows > 0){
+    if ($result->num_rows > 0){   
+        if ($rowHistory = 0){
+            echo "Status: Shipped" . "<br>";
+        }else if ($rowHistory = 2){
+            echo "Status: Delivered" . "<br>";
+        }else{
+            echo "Status: In transit" . "<br>";
+        }
+
         while($row = $result->fetch_assoc()){
             $addrID = $row["timestampAddID"];
             $stmt = $conn->prepare("SELECT * FROM addressTable WHERE addressID = $addrID");
