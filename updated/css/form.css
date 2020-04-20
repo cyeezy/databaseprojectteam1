@@ -151,6 +151,17 @@ input[type=button]:hover
     resize: vertical;
 }
 
+.login input[type=select]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
 
 .leftside , .rightside
 {
@@ -184,4 +195,9 @@ input[type=button]:hover
   font-size: 25px;
   position: relative;
   text-align: center;
+}
+
+.login
+{
+
 }

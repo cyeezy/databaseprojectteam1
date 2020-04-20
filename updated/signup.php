@@ -79,7 +79,7 @@
                         <option value="Customer">Customer</option>
                         <option value="Employee">Employee</option>
                         <option value="Manager">Manager</option>
-          <input type="text" id="button" value=""/>
+            <input type="text" id="button" value=""/>
             <button type="submit" name="login-submit">Login</button>
             <p class="message">Not Registered? <a href="#">Register</a></p>
           </fieldset>

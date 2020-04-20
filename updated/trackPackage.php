@@ -21,11 +21,10 @@
 <body>
 <div class="track">
     <div class="form" method>
-        <form class="search" action="emailSendTest.php" method="POST">
+        <form class="search" action="showTrackingHistory.php" method="POST">
             <input type="text" name="tracking" placeholder="Tracking #">
-            <input type="submit" id="btn" value="Search" onclick="location.href = 'index.html';" />
+            <button type="submit" name="display-history">Display</button>
         </form>
     </div>
 </div>
-
 </body>
