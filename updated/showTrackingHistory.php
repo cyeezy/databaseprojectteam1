@@ -29,7 +29,7 @@ $stmt->close();
      <label class="logo">UH Post Office</label>
      <ul>
          <li><a href="customerSignedIn.html">Home</a></li>
-         <li><a href="customerChooseAction.html">Account</a></li>
+         <li><a href="chooseCustomerAction.html">Account</a></li>
          <li><a href="index.html">Logout</a></li>
      </ul>
  </nav>
@@ -43,7 +43,7 @@ $stmt->close();
 
     <?php
 
-    if ($result->num_rows > 0){   
+    if ($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
             $addrID = $row["timestampAddID"];
             $stmt = $conn->prepare("SELECT * FROM addressTable WHERE addressID = $addrID");
