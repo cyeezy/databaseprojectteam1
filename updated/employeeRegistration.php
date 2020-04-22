@@ -38,8 +38,20 @@
             <label for="phoneNum">Phone Number</label>
             <input type="text" id="phoneNum" name="phone" placeholder="xxx-xxx-xxxx" required />
 
-            <label for="branch">Branch</label>
-            <input type="text" id="branch" name="branchNumber" placeholder="Branch Number" required>
+            <label for="branchNumber">Closest Branch</label>
+                <select id="branchNumber" name="branchNumber" required>
+                <option value="" disabled selected hidden>Branch Location</option>
+                <option value="1">1 (Little Rock, Arkansas)</option>
+                <option value="2">2 (Conway, Arkansas)</option>
+                <option value="3">3 (Baton Rouge, Louisiana)</option>
+                <option value="4">4 (Lafayette, Lousiana)</option>
+                <option value="5">5 (Roswell, New Mexico)</option>
+                <option value="6">6 (Ruidoso, New Mexico)</option>
+                <option value="7">7 (Moore, Oklahoma)</option>
+                <option value="8">8 (Norman, Oklahoma)</option>
+                <option value="9">9 (Houston, Texas)</option>
+                <option value="10">10 (San Antonio, Texas)</option>
+            </select>
 
             <label for="password">Password</label>
             <input type="text" id="password" name="password" placeholder="Password" required>

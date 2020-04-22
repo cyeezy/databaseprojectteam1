@@ -10,6 +10,8 @@ if (isset($_POST['show-reports'])) {
 
 }
 
+    $numberDays = (strtotime($endDate) - strtotime($startDate))/60/60/24;
+
     $stmt = $conn->prepare("SELECT * FROM package WHERE branchIDPackage = $branch AND latestArrival BETWEEN '$startDate' AND '$endDate'");
     $stmt->execute();
     $resultPackage = $stmt->get_result();
@@ -50,7 +52,7 @@ if (isset($_POST['show-reports'])) {
     $branchCountTotal = $result->fetch_assoc();
     $stmt->close();
 
-    //$avgEmployeePerBranch = $employeeCountTotal/$branchCountTotal;
+    $avgPackagePerDay = $packageCountBranchRange["total"] / $numberDays;
 
 ?>
 
@@ -71,7 +73,6 @@ if (isset($_POST['show-reports'])) {
      <label class="logo">UH Post Office</label>
      <ul>
          <li><a href="index.html">Home</a></li>
-         <li><a href="contact.php">FAQs</a></li>
          <li><a href="index.html">Logout</a></li>
      </ul>
  </nav>
@@ -93,7 +94,8 @@ if (isset($_POST['show-reports'])) {
 
                         echo "Total number of packages at this branch during this time: " . $packageCountBranchRange['total'] . "<br>";
                         echo "Average weight of the packages that fit the given: " . $packageAverageWeightBranchRange['average'] . " pounds" . "<br>";
-
+                        echo "Average packages per day in this time period: " .$avgPackagePerDay . "<br>";
+                        
                         while($row = $resultPackage->fetch_assoc()){
                             echo "id: " . $row["packageID"]. " - Tracking Number: " . $row["trackingNumberPackage"]. "<br>";
                         }

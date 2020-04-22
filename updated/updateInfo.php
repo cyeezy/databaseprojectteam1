@@ -31,19 +31,18 @@
                     <input type="text" id="track" name="trackingNumber" placeholder ="Tracking Number" required>
 
                     <label for="branch">Branch</label>
-                    <select id="branch" name="branch" required>
+                        <select id="branch" name="branch" required>
                         <option value="" disabled selected hidden>Branch Location</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="20">Final Destination</option>
+                        <option value="1">1 (Little Rock, Arkansas)</option>
+                        <option value="2">2 (Conway, Arkansas)</option>
+                        <option value="3">3 (Baton Rouge, Louisiana)</option>
+                        <option value="4">4 (Lafayette, Lousiana)</option>
+                        <option value="5">5 (Roswell, New Mexico)</option>
+                        <option value="6">6 (Ruidoso, New Mexico)</option>
+                        <option value="7">7 (Moore, Oklahoma)</option>
+                        <option value="8">8 (Norman, Oklahoma)</option>
+                        <option value="9">9 (Houston, Texas)</option>
+                        <option value="10">10 (San Antonio, Texas)</option>
                     </select>
 
                     <label for="Date of Arrival: "> Date of Arrival: </label>
