@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/updateInfoNew.css">
 <title>Track Package</title>
 </head>
 
@@ -13,17 +13,26 @@
      <label class="logo">UH Post Office</label>
      <ul>
          <li><a href="customerSignedIn.html">Home</a></li>
+         <li><a href="customerChooseAction.html">Account</a></li>
          <li><a href="index.html">Logout</a></li>
      </ul>
  </nav>
       </header>
 <body>
-<div class="track">
-    <div class="form" method>
-        <form class="search" action="showTrackingHistory.php" method="POST">
-            <input type="text" name="tracking" placeholder="Tracking #">
-            <button type="submit" name="display-history">Display</button>
-        </form>
+<div class="trackHis">
+    <h1>
+      Entries Deleted
+    </h1>
+    <div class ="display"> <!-- insert the php for echoeing to the page -->
+
+    <?php
+
+
+
+    ?>
+
+
     </div>
 </div>
+
 </body>

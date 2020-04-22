@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- This is the employee page where they add tracking to database -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/about.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete</title>
+</head>
+
+<body>
+    <header>
+        <nav class="fixed-nav-bar">
+            <label class="logo">UH Post Office</label>
+            <ul>
+              <li><a href="managerSignedIn.html">Home</a></li>
+              <li><a href="report.html">Report</a></li>
+              <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+    <div class="package">
+        <fieldset>
+        <legend>Delete Entries</legend>
+        <form class="info" method="POST" action="deleteProcess.php">
+
+            <label for="email1">Email</label>
+            <input type="email" id="email1" name="email1" placeholder="Customer Email"/>
+
+            <label for="email2">Email</label>
+            <input type="email" id="email2" name="email2" placeholder="Employee Email"/>
+
+            <label for="track">Tracking Number</label>
+            <input type="text" id="track" name="track" placeholder="Tracking #"/>
+
+
+            <button type="submit" name="employee-signup-submit">Submit</button>
+        </form>
+        </fieldset>
+    </div>
+</div>
+
+
+</body>
+</html>
