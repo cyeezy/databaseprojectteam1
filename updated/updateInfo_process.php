@@ -15,19 +15,19 @@ if (isset($_POST['update-submit'])) {
     $timestampID = $row["timestampID"]+1;
     $stmt->close();
 
-    if ($branch <= 10){
-      $stmt = $conn->prepare("SELECT branchLocation FROM branch WHERE branchID = $branch");
-      $stmt->execute();
-      $result = $stmt->get_result();
-      $row = $result->fetch_assoc();
-      $addrID = $row["branchLocation"];
-      $stmt->close();
-    }else{
+    if ($branch == 11){
       $stmt = $conn->prepare("SELECT receiverAddID FROM package WHERE trackingNumberPackage = $trackingNum");
       $stmt->execute();
       $result = $stmt->get_result();
       $row = $result->fetch_assoc();
       $addrID = $row["receiverAddID"];
+      $stmt->close();
+    }else{
+      $stmt = $conn->prepare("SELECT branchLocation FROM branch WHERE branchID = $branch");
+      $stmt->execute();
+      $result = $stmt->get_result();
+      $row = $result->fetch_assoc();
+      $addrID = $row["branchLocation"];
       $stmt->close();
     }
 

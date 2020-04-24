@@ -37,6 +37,12 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Email" required>
 
+                    <label for="phoneNum">Phone Number</label>
+                    <input type="text" name="phoneNum" placeholder="xxx-xxx-xxxx" REQUIRED>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" required>
+
                     <label for="addressline">Address Line</label>
                     <input type="text" id="mAddress" name="addressline" placeholder="Mailing Address" required>
 
@@ -49,11 +55,56 @@
                     <label for="state1">State</label>
                     <select id="state1" name="state1" required>
                         <option value="" disabled selected hidden>Select a State</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
                         <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
                         <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
                         <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
                         <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
                         <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
                     </select>
                     <label for="zip1">Zipcode</label>
                     <input type="text" id="zip1" name="zipcode1" placeholder="Zipcode" required>
@@ -61,19 +112,17 @@
                     <label for="branch">Closest Branch</label>
                         <select id="branch" name="branch" required>
                         <option value="" disabled selected hidden>Branch Location</option>
-                        <option value="1">1 (Little Rock, Arkansas)</option>
-                        <option value="2">2 (Conway, Arkansas)</option>
-                        <option value="3">3 (Baton Rouge, Louisiana)</option>
-                        <option value="4">4 (Lafayette, Lousiana)</option>
-                        <option value="5">5 (Roswell, New Mexico)</option>
-                        <option value="6">6 (Ruidoso, New Mexico)</option>
-                        <option value="7">7 (Moore, Oklahoma)</option>
-                        <option value="8">8 (Norman, Oklahoma)</option>
-                        <option value="9">9 (Houston, Texas)</option>
-                        <option value="10">10 (San Antonio, Texas)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
-                    <label for="track">Tracking Number</label>
-                    <input type="text" id="track" name="trackingNumber" placeholder="Tracking Number" required>
 
                     <label for="fragility">Fragility</label>
                     <select id="fragility" name="fragility" required>

@@ -50,11 +50,9 @@ $stmt->close();
     <?php
 
     if ($result->num_rows > 0){   
-        if ($rowHistory = 0){
-            echo "Status: Shipped" . "<br>";
-        }else if ($rowHistory = 2){
+        if ($rowHistory["statusOfPackage"] == 2){
             echo "Status: Delivered" . "<br>";
-        }else{
+        }else if ($rowHistory["statusOfPackage"] == 1){
             echo "Status: In transit" . "<br>";
         }
 
