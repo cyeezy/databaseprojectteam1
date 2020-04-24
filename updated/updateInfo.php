@@ -43,6 +43,7 @@
                         <option value="8">8 (Norman, Oklahoma)</option>
                         <option value="9">9 (Houston, Texas)</option>
                         <option value="10">10 (San Antonio, Texas)</option>
+                        <option value="11">11 (Final Destination)</option>
                     </select>
 
                     <label for="Date of Arrival: "> Date of Arrival: </label>
